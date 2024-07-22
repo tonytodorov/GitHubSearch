@@ -23,7 +23,7 @@ class MainRepository @Inject constructor(private val httpClient: OkHttpClient) {
         return withContext(Dispatchers.IO) {
             suspendCancellableCoroutine { continuation ->
 
-                val token = "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"
+                val token = "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"
                 val request = Request.Builder()
                     .url("https://api.github.com/search/users?q=$query&page=$page&per_page=$perPage")
                     .header("Authorization", "Bearer $token")
